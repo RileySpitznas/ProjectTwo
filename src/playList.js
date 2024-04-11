@@ -1,21 +1,17 @@
 import { LitElement, html, css } from 'lit';
 
-/**
- * Now it's your turn. Here's what we need to try and do:
- * 1. Get you HTML from your card working in here 
- * 2. Get your CSS rescoped as needed to work here
- */
-
-export class MyCard extends LitElement {
+export class PlayList extends LitElement {
 
   static get tag() {
-    return 'my-card';
+    return 'playList';
   }
+
 
   constructor() {
     super();
-    this.title = "My card";
+    this.title = "play list";
   }
+
 
   static get styles() {
     return css`
@@ -25,9 +21,11 @@ export class MyCard extends LitElement {
     `;
   }
 
+
   render() {
     return html`<div>${this.title}</div>`;
   }
+
 
   static get properties() {
     return {
@@ -36,4 +34,4 @@ export class MyCard extends LitElement {
   }
 }
 
-globalThis.customElements.define(MyCard.tag, MyCard);
+globalThis.customElements.define(PlayList.tag, PlayList);
